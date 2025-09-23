@@ -95,7 +95,7 @@ EDA와 베이스라인을 기반으로, 이후 단계에서는 다음과 같은 
 - 이민규
   - https://www.notion.so/268859ccc4f9805583ebd7f3f1214053?source=copy_link#26b859ccc4f98097bd8ccd0233fb6ae2
 - 최귀빈
-  -
+  - https://www.notion.so/250909_Daily-26955ab021a08102a061d5209ce6862b?source=copy_link
 
 ---
 
