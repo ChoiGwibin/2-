@@ -1,3 +1,4 @@
+# ------------------------------------------------------------------ 1. 라이브러리 및 환경 설정 ------------------------------------------------------------------
 # 라이브러리 및 환경 설정
 !pip install pandas matplotlib seaborn Pillow tqdm torchmetrics albumentations ultralytics pycocotools PyYAML
 
@@ -27,6 +28,7 @@ from ultralytics import YOLO
 from pycocotools.coco import COCO
 from pycocotools.cocoeval import COCOeval
 
+# ------------------------------------------------------------------ 2. 데이터 준비 ------------------------------------------------------------------
 # Kaggle 설정
 if not os.path.exists(os.path.expanduser("~/.kaggle/kaggle.json")):
     from google.colab import files
@@ -59,6 +61,7 @@ if not os.path.exists(extract_dir) or not os.listdir(extract_dir):
 else:
     print('이미 압축 해제된 폴더가 존재:', extract_dir)
 
+# ------------------------------------------------------------------ 3. 한글 폰트 설정 ------------------------------------------------------------------
 # 한글 폰트 설치
 !apt-get update -qq
 !apt-get install fonts-nanum -qq > /dev/null
@@ -72,7 +75,7 @@ fm.fontManager.addfont(font_path)
 plt.rcParams['font.family'] = fm.FontProperties(fname=font_path).get_name()
 plt.rcParams['axes.unicode_minus'] = False
 
-# 데이터 로드 및 EDA
+# ------------------------------------------------------------------ 4. 데이터 탐색 및 분석(EDA) ------------------------------------------------------------------
 def load_and_prepare_data(image_dir, annotation_dir):
     """
     Args:
@@ -288,6 +291,7 @@ def load_and_prepare_data(image_dir, annotation_dir):
     return df
 
 
+# ------------------------------------------------------------------ 5. YOLO 데이터셋 변환 및 학습 ------------------------------------------------------------------
 # YOLO 데이터셋 변환을 위한 함수
 def convert_to_yolo_format(bbox, img_width, img_height):
     """
@@ -470,6 +474,7 @@ if __name__ == '__main__':
         except Exception as e:
             print(f"학습 중 오류가 발생했습니다: {e}")
 
+# ------------------------------------------------------------------ 6. 추론 및 제출 파일 생성 ------------------------------------------------------------------
 def generate_submission_file(trained_model_path, test_image_dir, output_csv_path, conf_threshold=0.001):
     """
     훈련된 YOLO 모델로 테스트 이미지에 대한 예측을 수행하고,
@@ -952,6 +957,7 @@ if __name__ == '__main__':
         output_csv_path=OUTPUT_CSV_PATH
     )
 
+# ------------------------------------------------------------------ 7. 통합 데이터 준비 스크립트 ------------------------------------------------------------------
 def prepare_final_dataset(base_path):
     """
     모든 데이터 준비 및 YAML 생성 과정을 통합하여 처리하는 최종 함수.
