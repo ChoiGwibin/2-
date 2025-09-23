@@ -86,3 +86,17 @@ EDA와 베이스라인을 기반으로, 이후 단계에서는 다음과 같은 
 <img width="1308" height="788" alt="1_comparison" src="https://github.com/user-attachments/assets/c9c8101a-518b-42d8-b592-655461d34ffb" />
 
 ---
+
+## 협업일지
+- 박지윤
+  - 
+- 손원후
+  - 
+- 이민규
+  - https://www.notion.so/268859ccc4f9805583ebd7f3f1214053?source=copy_link#26b859ccc4f98097bd8ccd0233fb6ae2
+- 최귀빈
+  -
+
+---
+
+## 보고서
