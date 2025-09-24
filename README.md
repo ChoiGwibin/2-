@@ -100,3 +100,7 @@ EDA와 베이스라인을 기반으로, 이후 단계에서는 다음과 같은 
 ---
 
 ## 보고서
+- 보고서
+https://www.notion.so/27755ab021a080dc87d5f3fd4dc4ec1b?source=copy_link
+- 발표자료
+https://docs.google.com/presentation/d/15ygZSNg_P2RrnOsxhuIegtXbXzjuSdaJiAiyOF5dKrs/edit?usp=sharing
