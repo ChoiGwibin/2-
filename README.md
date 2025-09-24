@@ -91,7 +91,7 @@ EDA와 베이스라인을 기반으로, 이후 단계에서는 다음과 같은 
 - 박지윤
   - 
 - 손원후
-  - 
+  - https://www.notion.so/278869855e428062a4d9ebe80ddaafad?source=copy_link
 - 이민규
   - https://www.notion.so/268859ccc4f9805583ebd7f3f1214053?source=copy_link#269859ccc4f980ca8760f6952eedbdf1
 - 최귀빈
